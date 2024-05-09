@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Motivational Quotes</title>
+    <link rel="icon" type="images/x-icon" href="Wecarelogo.jpg" />
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <div id="Design">
+    <header>
+        <img src="Wecarelogo.jpg" alt="Logo">
+        <h1>"Daily Motivational Quotes"</h1>
+        <h6 class="Text">Daily motivational quotes are short, uplifting phrases or statements designed to inspire and encourage individuals on a daily basis.</h6>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Start.html">Back</a></li>
+        </ul>
+    </nav>
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
+        <div>
+            <button class="quote_hover" onclick="getquote(api_url)">New Quote</button>
+            <button class="post_hover" onclick="share()"><img src="X-Twitter-Logo.png">Post</button>
+        </div>
+    </div>
+</div>
+    <script src="DMquotes.js"></script>
+</body>
+</html>

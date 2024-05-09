@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    user-select: none;
+}
+
+
+#game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+#menu {
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../star.jpg');
+    background-size: 100% 100%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    /*display: none;*/
+}
+
+#menu-heading {
+    position: relative;
+    margin-top: 0px;
+    left: 0;
+    height: 130px;
+    width: 100vw;
+    background-color: #0ee7b1;
+    font-size: 30px;
+    line-height: 130px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.lvl {
+    position: relative;
+    margin-top: 30px;
+    top: 10%;
+    left: 50%;
+    width: calc(30vw - 10px);
+    height: 80px;
+    color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to right, #6BBD99 , #46A094);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.lvl:hover {
+    background-image: linear-gradient(to right, #68B8F6, #429FD2);
+    color: #fff;
+}
+
+#level {
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../star.jpg');
+    background-size: 100% 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+
+.test-tube {
+    position: absolute;
+    height: 130px;
+    width: 40px;
+    border: 2px solid rgb(15, 219, 25);
+    border-radius: 2px 2px 20px 20px;
+    background-position: 0 10px;
+    overflow: hidden;
+    transition: .2s linear;
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+@keyframes glassAnim {
+    50%,100% {transform: scale(.5);}
+    50% {transform: scale(1.05);}
+}
+
+.colors {
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 40px;
+}
+
+#won {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    color: #6BBD99;
+}
+
+#white-bg {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 40px;
+    height: 10px;
+    background-color: white;
+    z-index: 1000;
+    transition: 1s;
+}
+
+#colorful-bg {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    z-index: 1000;
+    transition: 1s;
+}
+
+#restart {
+    left: 0;
+    cursor: pointer;
+}
+
+#home {
+    left: calc(100vw - 150px);
+    cursor: pointer;
+}
+
+.game-buttons {
+    position: fixed;
+    top: calc(100vh - 50px);
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    background-color: lightgreen;
+    border-radius: 10px 10px 0 0;
+}
+
+#lvl-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    background-color: #0ee7b1;
+    border-radius: 0 0 25px 25px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#moves {
+    position: fixed;
+    top: calc(100vh - 850px);
+    width: 140px;
+    height: 34px;
+    left: 10px;
+    font-size: 20px;
+    background-color: rgb(18, 216, 18);
+    font-size: 30px;
+}
+
+#rules-btn {
+    position: fixed;
+    left: calc(100vw - 200px);
+    top: calc(100vh - 50px);
+    height: 50px;
+    width: 200px;
+    background-color: lightgreen;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#rules-page {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.5s linear;
+}
+
+#rules {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    height: calc(100vh - 200px);
+    width: calc(100vw - 100px);
+    background-color: white;
+    border-radius: 10px;
+}
+
+#rules-heading {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+#rules-text {
+    position: absolute;
+    top: 70px;
+    left: 5%;
+    width: 90%;
+    font-size: 20px;
+    height: calc(100vh - 200px - 150px);
+    overflow-x: hidden;
+}
+
+#back {
+    position: absolute;
+    top: calc(100% - 120px + 65px + 10px);
+    height: 40px;
+    width: 100px;
+    left: calc(100% - 100px);
+    background-color: rgb(100, 255, 100);
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+}
+
+#alert-button:hover {
+    background-color: rgb(150,255,150);
+}
+  /**
+**/
+:root {
+    --primColor: #dcdcdc;
+    --secoColor: #555555;
+    --cornerRad: 4px;
+  }
+  details {
+    margin: 15px;
+  }
+  summary {
+    position: absolute;
+    top: 40px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    padding: left 12px;
+    width: 38px;
+    height: 38px;
+    background-color: var(--primColor);
+    border: 1px solid var(--secoColor);
+    border-radius: var(--cornerRad);
+    color: var(--secoColor);
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    transition: transform 200ms ease-in-out 0s;
+    
+  }
+  summary::before,
+  summary::after {
+    position: static;
+    top: 0;
+    left: 0;
+  }
+  summary::before {
+    content: "";
+  }
+  summary::after {
+    content: "III";
+    position:sticky;
+    letter-spacing: 1px;
+    font-size: 27px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  summary:hover {
+    transform: scale(1.1);
+  }
+  summary::marker {
+    font-size: 0;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] .menu {
+    animation-name: menuAnim;
+  }
+  details[open] summary::before {
+    content: "X";
+  }
+  details[open] summary::after {
+    content: "";
+  }
+  .menu {
+    position: absolute;
+    top: 60px;
+    height: 0;
+    width: fit-content;
+    border-radius: var(--cornerRad);
+    background-color: var(--primColor);
+    box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    animation: closeMenu 300ms ease-in-out forwards;
+  }
+  .menu a {
+    padding: 12px 24px;
+    margin: 0 16px;
+    color: var(--secoColor);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    text-align: center;
+    transition: filter 200ms linear 0s;
+  }
+  .menu a:nth-of-type(1) {
+    padding-top: 24px;
+  }
+  .menu a:nth-last-of-type(1) {
+    border-bottom: none;
+  }
+  .menu a:hover {
+    filter: brightness(200%);
+  }
+  details::before {
+    color: var(--secoColor);
+    position: absolute;
+    margin-left: 80px;
+    padding: 10px 10px;
+    opacity: 0.4;
+  }
+  details[open]::before {
+    animation: fadeMe 300ms linear forwards;
+  }
+  @keyframes menuAnim {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 368px; /*Change this depnds to the content that you want*/
+    }
+  }
+  @keyframes fadeMe {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

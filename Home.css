@@ -1,0 +1,448 @@
+/* Reset some default styles */
+body, h1, h2, h4, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to right, rgb(151, 240, 243) , rgb(29, 190, 164));
+}
+
+Header {
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to right, #6BBD99 , #46A094);
+    color: #030303;
+}
+
+Header img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.Text {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #396d66;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.InfoEm, .InfoCon{
+    text-align: center;
+    line-height: 0;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    Header img {
+        width: 80px; 
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+}
+#block-yui_3_17_2_1_1648729481274_4469 + div > .col:not(.span-0) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20% !important;
+  } 
+  #block-yui_3_17_2_1_1648729481274_4469 + div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 1203px) {
+    #block-yui_3_17_2_1_1648729481274_4469 + div > .col:not(.span-0) {
+      width: 100% !important;
+    } 
+  }
+/*Login form designs*/
+
+/*about us page*/
+.AU, .AUtext{
+    text-align: center;
+    margin: center;
+    margin-top: 20px;
+    
+}
+/*Design for buttons of Home features*/
+
+/*BTE features and buttons*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/*Box Breathing*/
+.AnxietyBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:20%;
+     left:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .AnxietyBTN:hover{
+        background-color: #04AA6D;
+        color: white;
+        letter-spacing: 0.15cm;
+    }
+/*Pursed Lip Breathing*/
+.StressBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:40%;
+     left:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .StressBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+    }
+/*Coherent Breathing*/
+.RelaxationBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:60%;
+     left:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .RelaxationBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+    }
+/*Deep Breathing*/
+.EnergyConsevationBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:40%;
+     left:40%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .EnergyConsevationBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+    }
+/*4-7-8 Breathing*/
+.B4-7-8BBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:20%;
+     right:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+}
+.B4-7-8BBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+}
+/*AlternateNostrilBTN*/
+.AlternateNostrilBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:40%;
+     right:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+}
+.AlternateNostrilBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+}
+/*DiagphragmaticBTN*/
+.DiagphragmaticBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:60%;
+     right:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+}
+.DiagphragmaticBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+}
+/*CS features and buttons*/
+/**/
+/**/
+/**/
+/**/
+/**/
+/**/
+/*Beach_SoundBTN*/
+.Beach_SoundBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:20%;
+     left:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .Beach_SoundBTN:hover{
+        background-color: #04AA6D;
+        color: white;
+        letter-spacing: 0.15cm;
+    }
+/*Forest_SoundBTN*/
+.Forest_SoundBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:40%;
+     left:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .Forest_SoundBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+    }
+/*Waterfall_SoundBTN*/
+.Waterfall_SoundBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:60%;
+     left:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .Waterfall_SoundBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+    }
+/*Rain_SoundBTN*/
+.Rain_SoundBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:40%;
+     left:40%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+    }
+    .Rain_SoundBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+    }
+/*Wind_SoundBTN*/
+.Wind_SoundBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:20%;
+     right:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+}
+.Wind_SoundBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+}
+/*Whistle_SoundBTN*/
+.Whistle_SoundBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:40%;
+     right:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+}
+.Whistle_SoundBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+}
+/*River_SoundBTN*/
+.River_SoundBTN{
+    margin-top: 70px;
+    font-size: 40px;
+     top:60%;
+     right:10%;
+     width:400px;
+     height:100px;
+     position: absolute;
+     transition-duration: 0.4s;
+     border-radius: 30px;
+}
+.River_SoundBTN:hover{
+    background-color: #04AA6D;
+    color: white;
+    letter-spacing: 0.15cm;
+}
+.quote-box{
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0px 20px 0px rgba(0,0,0,0.15);
+}
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.quote-box h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 299);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+.quote-box span{
+    display: block;
+    margin: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 299);
+    position: absolute;
+    top: 50%;
+    left: -30%;
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box button{
+    background: rgb(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+.quote-box button img{
+    width: 20px;
+    margin-right:10px;
+}
+.quote-box button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+.quote_hover:hover, .post_hover:hover{
+    background-color: #04AA6D;
+    color: rgb(40, 236, 115);
+    letter-spacing: 0.15cm;
+}
+#Design{
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('Yoga.png');
+    background-size: 100% 100%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}

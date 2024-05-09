@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #C3E8C2;
+}
+
+.wrapper2 {
+  width: 1280px;
+  margin: 10px auto 0;
+}
+
+.wrapper2 .title  {
+  font-size: 84px;
+  color: #46A094;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;  
+  position: relative;
+  left: -50px;
+
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn{
+    color: white;
+    width: 155px;
+  height: 150px;
+  margin: 20px;
+  background: #6BBD99;
+  border: solid rgb(50, 151, 104) 1px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.btn:hover{
+    background-color: #46A094;
+    color: #e1e9e5;
+    letter-spacing: 0.15cm;
+}
+
+.container .option_item {
+  display: block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  margin: 10px;
+}
+
+.container .option_item .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+
+.option_item .option_inner {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 58px 40px;
+  cursor: pointer;
+  color: #585c68;
+  display: block;
+  border: 5px solid transparent;
+  position: relative;
+}
+
+.option_item .option_inner .icon {
+  margin-bottom: 10px;
+}
+
+.option_item .option_inner .icon .fab {
+  font-size: 32px;
+}
+
+.option_item .option_inner .name {
+  user-select: none;
+}
+
+
+.option_item .checkbox:checked ~ .option_inner.facebook {
+  border-color: #3b5999;
+  color: #3b5999;
+}
+
+.option_item .checkbox:checked ~ .option_inner.twitter {
+  border-color: #55acee;
+  color: #55acee;
+}
+
+.option_item .checkbox:checked ~ .option_inner.instagram {
+  border-color: #e4405f;
+  color: #e4405f;
+}
+
+.option_item .checkbox:checked ~ .option_inner.linkedin {
+  border-color: #0077b5;
+  color: #0077b5;
+}
+
+.option_item .checkbox:checked ~ .option_inner.whatsapp {
+  border-color: #25d366;
+  color: #25d366;
+}
+
+.option_item .checkbox:checked ~ .option_inner.google {
+  border-color: #dd4b39;
+  color: #dd4b39;
+}
+
+.option_item .checkbox:checked ~ .option_inner.reddit {
+  border-color: #ff5700;
+  color: #ff5700;
+}
+
+.option_item .checkbox:checked ~ .option_inner.quora {
+  border-color: #b92b27;
+  color: #b92b27;
+}
+
+.option_item .option_inner .tickmark {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 20px solid;
+  border-color: #000 transparent transparent #000;
+  display: none;
+}
+
+.option_item .option_inner .tickmark:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 15px;
+  height: 5px;
+  border: 3px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+}
+
+.option_item .checkbox:checked ~ .option_inner .tickmark {
+  display: block;
+}
+
+.option_item .option_inner.facebook .tickmark {
+  border-color: #3b5999 transparent transparent #3b5999;
+}
+
+.option_item .option_inner.twitter .tickmark {
+  border-color: #55acee transparent transparent #55acee;
+}
+
+.option_item .option_inner.instagram .tickmark {
+  border-color: #e4405f transparent transparent #e4405f;
+}
+
+.option_item .option_inner.linkedin .tickmark {
+  border-color: #0077b5 transparent transparent #0077b5;
+}
+
+.option_item .option_inner.whatsapp .tickmark {
+  border-color: #25d366 transparent transparent #25d366;
+}
+
+.option_item .option_inner.google .tickmark {
+  border-color: #dd4b39 transparent transparent #dd4b39;
+}
+
+.option_item .option_inner.reddit .tickmark {
+  border-color: #ff5700 transparent transparent #ff5700;
+}
+
+.option_item .option_inner.quora .tickmark {
+  border-color: #b92b27 transparent transparent #b92b27;
+}
+/**checking values for floating messages
+**/
+.floating-message {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/**
+**/
+:root {
+  --primColor: #dcdcdc;
+  --secoColor: #555555;
+  --cornerRad: 4px;
+}
+details {
+  margin: 15px;
+}
+summary {
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: left 8px;
+  width: 38px;
+  height: 38px;
+  background-color: var(--primColor);
+  border: 1px solid var(--secoColor);
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+  
+}
+summary::before,
+summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+summary::before {
+  content: "";
+}
+summary::after {
+  content: "III";
+  position:sticky;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+details[open] summary::before {
+  content: "X";
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  height: 0;
+  width: fit-content;
+  border-radius: var(--cornerRad);
+  background-color: var(--primColor);
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.menu a:hover {
+  filter: brightness(200%);
+}
+details::before {
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 80px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 120px; /*Change this depnds to the content that you want*/
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*This is the graph for the results*/
+#graph-container {
+  margin: 40px auto;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mood-chart {
+  width: 100%;
+  height: 400px;
+}
+/*container for the selected emotions*/
+.selected-emotions-container {
+  background-color: #f7f7f7; /* light gray background */
+  padding: 20px;
+  border: 1px solid #ddd; /* light gray border */
+  border-radius: 10px; /* rounded corners */
+  width: 300px; /* fixed width */
+  margin: 20px auto; /* center horizontally */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.selected-emotions-container h2 {
+  margin-top: 0; /* remove top margin */
+  font-weight: bold; /* bold font */
+  color: #333; /* dark gray text */
+}
+
+#selected-emotions {
+  padding: 10px; /* add some padding */
+  font-size: 16px; /* slightly larger font */
+  color: #666; /* medium gray text */
+}
+
+/* add some styling to the selected emotions list */
+#selected-emotions ul {
+  list-style: none; /* remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+#selected-emotions li {
+  margin-bottom: 10px; /* add some space between items */
+}
+
+#selected-emotions li:before {
+  content: "• "; /* add a bullet point */
+  color: #666; /* medium gray text */
+  font-size: 18px; /* slightly larger font */
+}
+/*Dropdown for weeks and months*/
+/* filter-dropdown styles */
+:root {
+  --primary-color: #333;
+  --background-color: #f9f9f9;
+  --border-color: #ddd;
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  --transition-duration: 0.3s;
+}
+
+/* Filter dropdown styles */
+ul {
+  list-style-type: none;
+}
+
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.filter-dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity var(--transition-duration);
+}
+
+.filter-dropdown-menu.active {
+  display: block;
+  opacity: 1;
+}
+
+.filter-dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: background-color var(--transition-duration);
+}
+
+.filter-dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-dropdown-item:focus {
+  background-color: #ccc;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+/* Dropdown button styles */
+.filter-dropdown-btn {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.filter-dropdown-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.filter-dropdown-btn:focus {
+  background-color: #ccc;
+  box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+/* Dropdown arrow styles */
+.filter-dropdown-btn::after {
+  content: '\25BE';
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform var(--transition-duration);
+}
+
+.filter-dropdown-btn:hover::after {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ WE CARE }}</title>
+    <link rel="icon" type="images/x-icon" href="Wecarelogo.jpg" />
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    </section>
+         <div id = "game">
+            <div id = "menu">  
+                <div id = "menu-heading">WATER SORT "FLOW" PUZZLE</div>
+                <div>
+                    <details>
+                      <summary></summary>
+                      <nav class="menu">
+                        <a href="/Start.html">Home</a>
+                        <a href="BTexercise.html">Breathing Exercises</a>
+                        <a href="Csound.html">Calming Sounds</a>
+                        <a href="DMquotes.html">Motivational Quotes</a>
+                        <a href="Yoga_Exercise/Yexercise.html">Yoga Exercises</a>
+                        <a href="Flow_Game/game.html">Flow Game</a>
+                        <a href="/Mood_Tracker/mood_tracker.html">Mood Tracker</a>
+                        <a href="/Mood_Tracker/Diary/Diary.html">Diary</a>
+                      </nav>
+                    </details>
+                  </div>
+                <div class = "lvl" id = "easy" onclick = "OpenLevel(0);">EASY</div>
+                <div class = "lvl" id = "medium" onclick = "OpenLevel(1);">MEDIUM</div>
+                <div class = "lvl" id = "hard" onclick = "OpenLevel(2);">HARD</div>
+                <div class = "lvl" id = "very-hard" onclick = "OpenLevel(3)">VERY HARD</div>
+                <div class = "lvl" id = "impossible" onclick = "OpenLevel(7);">IMPOSSIBLE</div>
+                <br><br><br>
+                <div id = "rules-btn" onclick = "ShowRules();">RULES</div>
+            </div>
+            <div id = "level"></div>
+            <div id = "rules-page">
+                <div id = "rules">
+                    <div id = "rules-heading">RULES</div>
+                    <div id = "rules-text">There will be some glasses (or test tubes to be exact xD), your task is to put the liquids with same color together! You can transfer different colored water from one glass to another only if the other glass is empty or its top most layer of water is of the same color as that of the one from which water is to be taken. The glass you have selected will be highlighted to prevent confusion. Restart button will take you back to the beginning of the level, also every time you open the same level the water will be shuffled. Check out the real game 'Water sort puzzle' on playstore, I have cloned it.</div>
+                    <div id = "back" onclick = "HideRules();"><i class="fa-solid fa-arrow-left"></i>BACK</div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

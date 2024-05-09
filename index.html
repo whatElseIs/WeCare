@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to "WE CARE"</title>
+    <link rel="icon" type="images/x-icon" href="Wecarelogo.jpg" />  
+    <script type="module" src="./Firebase/login.js"></script>
+    <script type="module" src="./Firebase/signup.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+</head>
+<body>
+    <div class="header_flex">
+    <header class="header">
+        <nav class="nav">
+            <div>
+                <details>
+                  <summary></summary>
+                  <nav class="menu">
+                    <a href="/index.html">Home</a>
+                    <a href="BTexercise_Guest.html">Breathing Exercises</a>
+                    <a href="Csound_Guest.html">Calming Sounds</a>
+                    <a href="DMquotes_Guest.html">Motivational Quotes</a>
+                    <a href="">Yoga Exercises .<i class="fa fa-lock"></i></a>
+                    <a href="">Flow Game .<i class="fa fa-lock"></i></a>
+                    <a href="">Mood Tracker .<i class="fa fa-lock"></i></a>
+                    <a href="">Diary .<i class="fa fa-lock"></i></a>
+                  </nav>
+                </details>
+              </div>
+            <img class="logoimage" src="We-Logo-NBG.png" >
+            <h1 class="logotitle"><span class="WECARE" style="font-size:43px">"WE-CARE"</span> <span class="positionheader" style="font-size:14px">Digital Mindfulness Training</span></h1>
+            <button class="buttonopen" id="form-login">LOG-IN</button>
+            <div class="toggle-cont">
+                <input class="toggle-input" id="toggle" name="toggle1" value="submit" onclick="switchPlay()" type="checkbox" />
+                <audio src="Calming_Sound/Calming Whistle - Relaxing Music.mp3" autoplay loop id="audioclick"></audio>
+                <label class="toggle-label" for="toggle">
+                    <div class="cont-label-play">
+                        <span class="label-play"></span>
+                    </div>
+                </label>
+            </div>       
+        </nav>
+    </div>
+    </header>
+
+    <script>
+        function switchPlay() {
+            var audio = document.getElementById('audioclick');
+            if (audio.muted) {
+                audio.muted = false;
+            } else {
+                audio.muted = true;
+            }
+        }
+        </script>
+
+     <!-- Pop-up content for Information  -->
+            <div id="popupIn" class="popupIn">
+                <span class="closeIn" onclick="closePopupIn()">&times;</span>
+                <h1><strong>Information:</strong></h1>
+                <form id="contactFormIn">
+        <p class="space">/             </p>
+        <p class="long">Welcome to We Care Digital Mindfulness, where we embark on a journey to find harmony, between technology and your well being. Discover how to incorporate technology into your life for enhanced physical and mental well-being with We Care!</p>
+        <p class="space">/             </p>
+        <p class="long">Our goal is to empower individuals to utilize technology in ways that positively impact their mental health. Built upon principles of balance and Digital Mindfulness offers a space for those who want to navigate the landscape with purpose. Our platform provides selected practices, guided meditations and resources designed to help you choose what you need.</p>
+        <p class="space">/             </p>
+        <p class="long">Our platform offers mindfulness techniques, including breathing exercises, calming sounds, daily motivational quotes, and yoga exercises, and flow. Cultivate a conscious connection between your body and mind to reduce stress, and improve overall health.</p>
+        <p class="space">/  
+        <div class="Information_Dev">
+        <a onclick="openPopupDev()"><i class="fa fa-arrow-right"></i></a>
+        </div>
+            </form>
+                </div>
+        <!-- Pop-up content for Information on developer-->
+        <div id="popupIn_Dev" class="popupIn_Dev">
+            <span class="closeIn_Dev" onclick="closePopupIn_Dev()">&times;</span>
+            <h1><Strong>Developers:</Strong></h1>
+            <p class="space">/  
+                <p class="space">/  
+            <img src="We-developers/christian.png" class="imageInfo">
+            <img src="We-developers/amiel.png" class="imageInfo">
+            <img src="We-developers/brix.png" class="imageInfo">
+            <img src="We-developers/marvin.png" class="imageInfost">
+            <img src="We-developers/hayram.png" class="imageInfo">
+            <img src="We-developers/ryel.png" class="imageInfost">
+            <a class="goBack" onclick="goBack()"><i class="fa fa-arrow-left"></i></a>
+        </div>
+            <!-- Pop-up content for Emailing  -->
+            <div id="popupG" class="popupG">
+                <span class="close" onclick="closePopupG()">&times;</span>
+                <h2>Contact Us:</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a0e359e3-0870-41c1-8273-ac23332696bf">
+                    <label for="name2">Name:</label>
+                    <input type="text" id="name2" name="name-input" required>
+                    <label for="email2">Email:</label>
+                    <input type="email2" id="email2" name="email-input" placeholder="Email" required>
+                    <label for="message2">Message:</label>
+                    <textarea id="message2" name="message-input" rows="4" cols="40" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>  
+         <!-- -->
+         <!-- -->
+         <!-- -->
+         <!-- -->
+         <!-- -->
+         <!--LOGIN FORM POPUP -->
+    <section class="home">   
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+               <!-- Login form-->
+            <div class="form login_form">
+                <form action="#">
+                    <h2>LOG-IN</h2>
+                    <div class="input_box">
+                        <input id="input-email" type="user" name="email1" placeholder="Enter your username" required/>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input id="input-pass" type="password" name="password1" placeholder="Enter your password" required/>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check"/>
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+                    <button class="button" id="login-btn">Login Now </button>
+                    <div class="div login_signup">You have an account? <a href="#" id="signup">Signup</a>
+                    </div>
+                </form>
+            </div>
+            <!-- For the Signup-->
+            <div class="form signup_form">
+                <form action="#">
+                    <h2>Signup</h2>
+                    <div class="input_box">
+                        <input type="user" id="input-email2" placeholder="Enter your username" required>
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+
+                    <div class="input_box">
+                        <input type="password" id="input-pass2" placeholder="Enter Password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" id="input-pass-confirm" placeholder="Confirm Password" required>
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash pw_hide"></i>
+                    </div>
+                    <button class="button" id="signup-btn" name="signup-button">Signup Now </button>
+                    <div class="div login_signup">Already have an account?
+                        <a href="Start.html" id="login">LOG-IN</a>
+                    </div>
+                </form>
+            </div>
+            <div id="notification"></div>
+        </div>
+    </section>
+    <div>
+        <div>
+            <div>
+            <section id="bt_index">
+                <img src="Wecarelogo.jpg" class="sample_img">
+                    <p><span class="classWECARE" style="font-size:135px; font-weight:bold">"WE CARE"</span><br> <span class="paragraph"> is centered on supporting students who need it to engage in mindfulness practices. Its six elements yoga, breathing exercises, motivational quotes, soothing sounds, a mood tracker, and flow (a game) can assist students in managing stress, anxiety, and burnout. WE CARE can assist people in relaxing, which is good for their own mental health.</span></p>
+                </div>
+            </section>
+        </div>
+        <div>
+        <div class="container">
+            <button class="BreathingExerciseBTN" id="BTexercise"><strong>Breathing Exercise</strong></button>
+            <button class="CalmingSoundBTN" id="Csound"><strong>Calming Sound</strong></button>
+            <button class="DailyMotivationalQuotesBTN" id="DMquotes"><strong>Daily Motivational Quotes</strong></button>
+            <button type="submit" class="YogaExerciseBTN" onclick="openPopup()"><strong>Yoga Exercise</strong><i class="fa fa-lock"></i></button>
+            <button type="submit" class="FlowBTN" onclick="openPopup()"><strong>Flow</strong><i class="fa fa-lock"></i></button>
+            <button type="submit" class="SleepTrackerBTN" onclick="openPopup()"><strong>Mood Tracker</strong><i class="fa fa-lock"></i></button>
+            <div class="popup" id="popup">
+            <img src="Wecarelogo.jpg">
+            <h2>Please Sign-Up</h2>
+            <p>To access more features, create and register for account. Thanks!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="for debugging">
+    <section id="bt_index">  
+            </div>
+    </section>
+</div>
+        <div>
+            <div class="BTexercise">
+            <section id="bt_index">
+                <div class="BTexercise-txt">
+                <h1 class="BT-title-question">What is <span>breathing exercise</span> ? </h1>
+                <h1 class="BT-title-answer">Breathing exercises are practices for improving respiratory system function, promoting relaxation, lowering stress and increasing attention.</h1>
+                <h1 class="BT-benefit-question">What is the benefits of breathing exercises? </h1>
+            <ul>
+                    <h1 class="BT-title-answer">Stress Reduction: Deep breathing activates the body's relaxation response, lowering stress hormone levels such as cortisol and fostering sensations of peace and relaxation.</h1>
+                    <h1 class="BT-title-answer"><strong>Improve Emotional Clarity:</strong> Deep, controlled breathing boosts oxygen flow to the brain, which improves cognitive function, mental clarity, and decision making.</h1>
+                    <h1 class="BT-title-answer"><strong>Relaxation:</strong> Deep breathing exercises help to relax and stay focused at all times</h1>
+                    <h1 class="BT-title-answer"><strong>Positive mental well-being:</strong> It reduces bad thinking habits that can cause stress, anxiety or depression.</h1>
+            </ul>   
+        </div>
+        <img class="sample_img1" src="\images_for_features\Breathing_Exercise.png">
+                </div>
+            </section>
+        </div>
+    <div>
+        <div class="Calming_Sound">
+        <section id="bt_index">
+            <img class="sample_img2" src="\images_for_features\Calming_Sounds.png">
+            <div class="Calming_Sound-txt">
+                <h1 class="Calming-title-question">What is <span>Calming sounds</span> ?  </h1>
+                <h1 class="Calming-title-answer">Calming sounds are auditory stimuli that provide a calming and relaxing influence on the mind and body. These noises can include natural sounds.</h1>
+                <h1 class="Calming-benefit-question">Benefits of listening to calming sounds </h1>
+            <ul>
+                    <h1 class="Calming-title-answer">Stress reduction: Listening to peaceful sounds can activate the body's relaxation response, lowering stress chemicals such as cortisol and instilling a sense of calm and relaxation.</h1>
+                    <h1 class="Calming-title-answer">Anxiety Relief: Calming sounds have been demonstrated to help with anxiety symptoms by soothing the nervous system and quieting the mind, resulting in less stress and tension.</h1>
+                    <h1 class="Calming-title-answer">Stress Management: Incorporating relaxing sounds into daily routines can be an excellent stress management tool, assisting individuals in coping with daily obstacles while maintaining a sense of balance and well-being.</h1>
+            </ul>   
+        </div>
+        
+                </div>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="Daily_Motivational">
+        <section id="bt_index">
+            <div class="Daily_Motivational-txt">
+                <h1 class="DM-title-question">What is <span>daily motivational quotes</span> ? </h1>
+                <h1 class="DM-title-answer">motivational quotes is a way of addressing such motivational words in order to help a certain individual to stay motivated at all cause to improve self confidence and positive thinking habits</h1>
+                <h1 class="DM-benefit-question">Benefits of Daily Motivational quotes </h1>
+            <ul>
+                    <h1 class="DM-title-answer">Stress Reduction: One of motivational best-known effects is its capacity to lessen stress through the practice of non-judgmental present-moment awareness. Through the practice of mindfulness, people can improve their overall awareness and mental clarity by learning to be more aware of their thoughts, feelings, and physical sensations.</h1>
+                    <h1 class="DM-title-answer">Positive Affirmation: Positive messages about resilience, self-worth, and personal development are frequently expressed in motivational quotes. By repeating these affirmations, people can fight negative self-talk and develop a more positive self-image, both of which are good for their mental health.</h1>
+                    <h1 class="DM-title-answer">Sense of Purpose: Motivational quotations can give people a sense of purpose and direction in life by helping them to identify their values, objectives, and aspirations. Higher levels of psychological well-being and life satisfaction are linked to having a distinct sense of purpose.</h1>
+            </ul>   
+        </div>
+        <img class="sample_img3" src="\images_for_features\Daily_Motivational.png">
+                 </div>
+                </div>
+            </section>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="Yoga_Exercise">
+        <section id="bt_index">
+            <div class="Yoga_Exercise-txt">
+                <h1 class="YE-title-question">What is <span>Yoga Exercises</span> ?</h1>
+                <h1 class="YE-title-answer">Asanas, or bodily postures or movements, are the name for the physical practices used in yoga that are intended to enhance both mental and physical health. Usually, yoga poses are done in tandem with conscious meditation and regulated breathing.</h1>
+                <h1 class="YE-benefit-question">What are the benefits of yoga exercises?</h1>
+            <ul>
+                    <h1 class="YE-title-answer">Stress Reduction: One of yoga's best-known effects is that it lowers stress levels. Yoga lowers the production of stress hormones like cortisol by promoting the body's relaxation response through a combination of attentive breathing, physical movement, and mindfulness exercises.</h1>
+                    <h1 class="YE-title-answer">Reduction of Anxiety: Regular yoga practice has been associated with a decrease in anxiety symptoms. Yoga's emphasis on breath awareness and relaxation practices can aid in mental calmness, lessen racing thoughts, and foster a peaceful, tranquil sense of inner being.</h1>
+                    <h1 class="YE-title-answer">Enhanced Mindfulness: A key element of yoga practice is mindfulness, which is a non-judgmental awareness of the current moment. Through practicing mindfulness, people can improve their overall awareness and clarity of mind by becoming more alert to their thoughts, feelings, and physical sensations.</h1>
+            </ul>   
+        </div>
+        <img class="sample_img4" src="\images_for_features\Yoga_Exercise.png">
+                 </div>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="Flow_Game">
+        <section id="bt_index">
+            <div class="Flow_Game-txt">
+                <h1 class="FG-title-question">What is <span>Flow Game</span> ?</h1>
+                <h1 class="FG-title-answer">Flow game will help you to calm your mind trough satisfaction of flowing water puzzles, players must solve puzzles or complete tasks trough sorting different kinds of color in the bottle. These puzzles can range from easy to imposible level of flowing water tasks.</h1>
+                <h1 class="FG-benefit-question">Benefits of Flow Game</h1>
+            <ul>
+                    <h1 class="FG-title-answer">Benefits of  puzzle game</h1>
+                    <h1 class="FG-title-answer">Mood Enhancement: Successfully completing puzzles can trigger the release of dopamine, a neurotransmitter associated with pleasure and reward, leading to improved mood and feelings of accomplishment.</h1>
+                    <h1 class="FG-title-answer">Distraction and Relaxation: Puzzle games provide a constructive distraction from everyday stressors, allowing players to relax and unwind while focusing on problem-solving tasks.</h1>
+            </ul>   
+        </div>
+        <img class="sample_img5" src="\images_for_features\Flow_Game.png">
+                </div>
+        </section>
+    </div>
+    <div class="Mood_Tracker">
+        <section id="bt_index">
+            <div class="Mood_Tracker-txt">
+                <h1 class="MT-title-question">What is <span>Mood Tracker</span> ?</h1>
+                <h1 class="MT-title-answer">Flow game will help you to calm your mind trough satisfaction of flowing water puzzles, players must solve puzzles or complete tasks trough sorting different kinds of color in the bottle. These puzzles can range from easy to imposible level of flowing water tasks.</h1>
+                <h1 class="MT-benefit-question">Benefits of Flow Game</h1>
+            <ul>
+                    <h1 class="MT-title-answer">Benefits of  puzzle game</h1>
+                    <h1 class="MT-title-answer">Mood Enhancement: Successfully completing puzzles can trigger the release of dopamine, a neurotransmitter associated with pleasure and reward, leading to improved mood and feelings of accomplishment.</h1>
+                    <h1 class="MT-title-answer">Distraction and Relaxation: Puzzle games provide a constructive distraction from everyday stressors, allowing players to relax and unwind while focusing on problem-solving tasks.</h1>
+            </ul> 
+            </div>
+            <img class="sample_img6" src="\images_for_features\Mood_Tracker.png">
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="footer_bottom"></div>
+        <section id="footer">
+                <ul class="nav_items">
+                    <li>
+                        <a onclick="openPopupIn()"><i class="fa fa-user"></i></a>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61556285870234&mibextid=JRoKGi"><i class="fab fa-facebook-f icon"></i>    </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/WeCare0411"><i class="fab fa-twitter icon"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/wecaredigitalmindfulness/"><i class="fab fa-instagram icon"></i></a></li>
+                      <li>
+                        <a onclick="openPopupG()"><i class="fa fa-envelope icon"></i></a>
+                        <li class="contactnumber">Contact:09082944158</li>
+                </ul>  
+            </section>
+            </div>
+    </div>
+</div>
+</div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=script.js></script>
+</body>
+</html>

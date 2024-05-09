@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(USER)Welcome to "WE CARE"</title>
+    <link rel="icon" type="images/x-icon" href="Wecarelogo.jpg" />  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+</head>
+<body>
+    <div class="header_flex">
+    <header class="header">
+        <nav class="nav">
+          <div>
+          <details>
+            <summary></summary>
+            <nav class="menu">
+              <a href="/Start.html">Home</a>
+              <a href="BTexercise.html">Breathing Exercises</a>
+              <a href="Csound.html">Calming Sounds</a>
+              <a href="DMquotes.html">Motivational Quotes</a>
+              <a href="Yoga_Exercise/Yexercise.html">Yoga Exercises</a>
+              <a href="Flow_Game/game.html">Flow Game</a>
+              <a href="Mood_Tracker/mood_tracker.html">Mood Tracker</a>
+              <a href="Mood_Tracker/Diary/Diary.html">Diary</a>
+            </nav>
+          </details>
+        </div>
+        <img class="logoimage" src="We-Logo-NBG.png" >
+        <h1 class="logotitle"><span class="WECARE" style="font-size:43px">"WE-CARE"</span> <span class="positionheader" style="font-size:14px">Digital Mindfulness Training</span></h1>
+            <button class="buttonopen" id="log-out">LOG-OUT</button>
+            <div class="toggle-cont">
+                <input class="toggle-input" id="toggle" name="toggle" value="submit" onclick="switchPlay()" type="checkbox" />
+                <audio src="Calming_Sound/Calming Whistle - Relaxing Music.mp3" autoplay loop id="audioclick"></audio>
+                <label class="toggle-label" for="toggle">
+                    <div class="cont-label-play">
+                        <span class="label-play"></span>
+                    </div>
+                </label>
+            </div>
+        </nav>
+    </header>
+</div>
+     <!-- Pop-up content for Information  -->
+            <div id="popupIn" class="popupIn">
+                <span class="closeIn" onclick="closePopupIn()">&times;</span>
+                <h1><strong>Information:</strong></h1>
+                <form id="contactFormIn">
+        <p class="space">/             </p>
+        <p class="long">Welcome to We Care Digital Mindfulness, where we embark on a journey to find harmony, between technology and your well being. Discover how to incorporate technology into your life for enhanced physical and mental well-being with We Care!</p>
+        <p class="space">/             </p>
+        <p class="long">Our goal is to empower individuals to utilize technology in ways that positively impact their mental health. Built upon principles of balance and Digital Mindfulness offers a space for those who want to navigate the landscape with purpose. Our platform provides selected practices, guided meditations and resources designed to help you choose what you need.</p>
+        <p class="space">/             </p>
+        <p class="long">Our platform offers mindfulness techniques, including breathing exercises, calming sounds, daily motivational quotes, and yoga exercises, and flow. Cultivate a conscious connection between your body and mind to reduce stress, and improve overall health.</p>
+        <p class="space">/  
+        <div class="Information_Dev">
+        <a onclick="openPopupDev()"><i class="fa fa-arrow-right"></i></a>
+        </div>
+            </form>
+                </div>
+        <!-- Pop-up content for Information on developer-->
+        <div id="popupIn_Dev" class="popupIn_Dev">
+            <span class="closeIn_Dev" onclick="closePopupIn_Dev()">&times;</span>
+            <h1><Strong>Developers:</Strong></h1>
+            <p class="space">/  
+                <p class="space">/  
+            <img src="We-developers/christian.png" class="imageInfo">
+            <img src="We-developers/amiel.png" class="imageInfo">
+            <img src="We-developers/brix.png" class="imageInfo">
+            <img src="We-developers/marvin.png" class="imageInfost">
+            <img src="We-developers/hayram.png" class="imageInfo">
+            <img src="We-developers/ryel.png" class="imageInfost">
+            <a class="goBack" onclick="goBack()"><i class="fa fa-arrow-left"></i></a>
+        </div>
+            <!-- Pop-up content for Emailing  -->
+            <div id="popupG" class="popupG">
+                <span class="close" onclick="closePopupG()">&times;</span>
+                <h2>Contact Us:</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a0e359e3-0870-41c1-8273-ac23332696bf">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>  
+         <!-- -->
+         <!-- -->
+         <!-- -->
+         <!-- -->
+         <!-- -->
+     
+   
+            <div class="BTexercise">
+            <section id="bt_index">
+                <div class="BTexercise-txt">
+                <h1 class="BT-title-question">What is <span>breathing exercise</span> ? </h1>
+                <h1 class="BT-title-answer">Breathing exercises are practices for improving respiratory system function, promoting relaxation, lowering stress and increasing attention.</h1>
+                <h1 class="BT-benefit-question">What is the benefits of breathing exercises? </h1>
+            <ul>
+                    <h1 class="BT-title-answer">Stress Reduction: Deep breathing activates the body's relaxation response, lowering stress hormone levels such as cortisol and fostering sensations of peace and relaxation.</h1>
+                    <h1 class="BT-title-answer"><strong>Improve Emotional Clarity:</strong> Deep, controlled breathing boosts oxygen flow to the brain, which improves cognitive function, mental clarity, and decision making.</h1>
+                    <h1 class="BT-title-answer"><strong>Relaxation:</strong> Deep breathing exercises help to relax and stay focused at all times</h1>
+                    <h1 class="BT-title-answer"><strong>Positive mental well-being:</strong> It reduces bad thinking habits that can cause stress, anxiety or depression.</h1>
+            </ul>   
+        </div>
+              <!--BUTTON FOR THE FEATURES-->
+ <section class="card" id="card_element">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2>Breathing Exercises</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="\images_for_features\Breathing_Exercise.png" alt="" class="flow" />
+            <h2>Breathing Exercises</h2>
+          </div>
+          <div class="card__body">
+            <button class="Flow_GameBtn" id="BT_exercise">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+                </div>
+            </section>
+        </div>
+    <div>
+        <div class="Calming_Sound">
+        <section id="bt_index">
+            <div class="Calming_Sound-txt">
+                <h1 class="Calming-title-question">What is <span>Calming sounds</span> ?  </h1>
+                <h1 class="Calming-title-answer">Calming sounds are auditory stimuli that provide a calming and relaxing influence on the mind and body. These noises can include natural sounds.</h1>
+                <h1 class="Calming-benefit-question">Benefits of listening to calming sounds </h1>
+            <ul>
+                    <h1 class="Calming-title-answer">Stress reduction: Listening to peaceful sounds can activate the body's relaxation response, lowering stress chemicals such as cortisol and instilling a sense of calm and relaxation.</h1>
+                    <h1 class="Calming-title-answer">Anxiety Relief: Calming sounds have been demonstrated to help with anxiety symptoms by soothing the nervous system and quieting the mind, resulting in less stress and tension.</h1>
+                    <h1 class="Calming-title-answer">Stress Management: Incorporating relaxing sounds into daily routines can be an excellent stress management tool, assisting individuals in coping with daily obstacles while maintaining a sense of balance and well-being.</h1>
+            </ul>   
+        </div>
+              <!--BUTTON FOR THE FEATURES-->
+ <section class="card" id="card_element">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2>Calming Sounds</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="\images_for_features\Calming_Sounds.png" alt="" class="flow" />
+            <h2>Calming Sounds</h2>
+          </div>
+          <div class="card__body">
+            <button class="Flow_GameBtn" id="Calming_sound">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+                </div>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="Daily_Motivational">
+        <section id="bt_index">
+            <div class="Daily_Motivational-txt">
+                <h1 class="DM-title-question">What is daily <span>motivational quotes</span> ? </h1>
+                <h1 class="DM-title-answer">motivational quotes is a way of addressing such motivational words in order to help a certain individual to stay motivated at all cause to improve self confidence and positive thinking habits</h1>
+                <h1 class="DM-benefit-question">Benefits of Daily Motivational quotes </h1>
+            <ul>
+                    <h1 class="DM-title-answer">Stress Reduction: One of motivational best-known effects is its capacity to lessen stress through the practice of non-judgmental present-moment awareness. Through the practice of mindfulness, people can improve their overall awareness and mental clarity by learning to be more aware of their thoughts, feelings, and physical sensations.</h1>
+                    <h1 class="DM-title-answer">Positive Affirmation: Positive messages about resilience, self-worth, and personal development are frequently expressed in motivational quotes. By repeating these affirmations, people can fight negative self-talk and develop a more positive self-image, both of which are good for their mental health.</h1>
+                    <h1 class="DM-title-answer">Sense of Purpose: Motivational quotations can give people a sense of purpose and direction in life by helping them to identify their values, objectives, and aspirations. Higher levels of psychological well-being and life satisfaction are linked to having a distinct sense of purpose.</h1>
+            </ul>   
+        </div>
+              <!--BUTTON FOR THE FEATURES-->
+ <section class="card" id="card_element">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2>Daily Motivational</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="\images_for_features\Daily_Motivational.png" alt="" class="flow" />
+            <h2>Daily Motivational</h2>
+          </div>
+          <div class="card__body">
+            <button class="Flow_GameBtn" id="Daily_motivational">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+                 </div>
+                </div>
+            </section>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="Yoga_Exercise">
+        <section id="bt_index">
+            <div class="Yoga_Exercise-txt">
+                <h1 class="YE-title-question">What is <span>Yoga Exercises</span> ?</h1>
+                <h1 class="YE-title-answer">Asanas, or bodily postures or movements, are the name for the physical practices used in yoga that are intended to enhance both mental and physical health. Usually, yoga poses are done in tandem with conscious meditation and regulated breathing.</h1>
+                <h1 class="YE-benefit-question">What are the benefits of yoga exercises?</h1>
+            <ul>
+                    <h1 class="YE-title-answer">Stress Reduction: One of yoga's best-known effects is that it lowers stress levels. Yoga lowers the production of stress hormones like cortisol by promoting the body's relaxation response through a combination of attentive breathing, physical movement, and mindfulness exercises.</h1>
+                    <h1 class="YE-title-answer">Reduction of Anxiety: Regular yoga practice has been associated with a decrease in anxiety symptoms. Yoga's emphasis on breath awareness and relaxation practices can aid in mental calmness, lessen racing thoughts, and foster a peaceful, tranquil sense of inner being.</h1>
+                    <h1 class="YE-title-answer">Enhanced Mindfulness: A key element of yoga practice is mindfulness, which is a non-judgmental awareness of the current moment. Through practicing mindfulness, people can improve their overall awareness and clarity of mind by becoming more alert to their thoughts, feelings, and physical sensations.</h1>
+            </ul>   
+        </div>
+              <!--BUTTON FOR THE FEATURES-->
+ <section class="card" id="card_element">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <h2>Yoga Exercises</h2>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+            <img src="\images_for_features\Yoga_Exercise.png" alt="" class="flow" />
+            <h2>Yoga Exercises</h2>
+          </div>
+          <div class="card__body">
+            <button class="Flow_GameBtn" id="Yoga_exercise">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+                 </div>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="Flow_Game">
+        <section id="bt_index">
+            <div class="Flow_Game-txt">
+                <h1 class="FG-title-question">What is <span>Flow Game</span> ?</h1>
+                <h1 class="FG-title-answer">Flow game will help you to calm your mind trough satisfaction of flowing water puzzles, players must solve puzzles or complete tasks trough sorting different kinds of color in the bottle. These puzzles can range from easy to imposible level of flowing water tasks.</h1>
+                <h1 class="FG-benefit-question">Benefits of Flow Game</h1>
+            <ul>
+                    <h1 class="FG-title-answer">Benefits of  puzzle game</h1>
+                    <h1 class="FG-title-answer">Mood Enhancement: Successfully completing puzzles can trigger the release of dopamine, a neurotransmitter associated with pleasure and reward, leading to improved mood and feelings of accomplishment.</h1>
+                    <h1 class="FG-title-answer">Distraction and Relaxation: Puzzle games provide a constructive distraction from everyday stressors, allowing players to relax and unwind while focusing on problem-solving tasks.</h1>
+            </ul>   
+        </div>
+        <!--BUTTON FOR THE FEATURES-->
+ <section class="card" id="card_element">
+  <div class="card__inner">
+    <div class="card__face card__face--front">
+      <h2>Flow GAME</h2>
+    </div>
+    <div class="card__face card__face--back">
+      <div class="card__content">
+        <div class="card__header">
+          <img src="\images_for_features\Flow_Game.png" alt="" class="flow" />
+          <h2>Flow GAME</h2>
+        </div>
+        <div class="card__body">
+          <button class="Flow_GameBtn" id="game_button">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="Mood_Tracker">
+        <section id="bt_index">
+            <div class="Mood_Tracker-txt">
+                <h1 class="MT-title-question">What is <span>Mood Tracker</span> ?</h1>
+                <h1 class="MT-title-answer">Flow game will help you to calm your mind trough satisfaction of flowing water puzzles, players must solve puzzles or complete tasks trough sorting different kinds of color in the bottle. These puzzles can range from easy to imposible level of flowing water tasks.</h1>
+                <h1 class="MT-benefit-question">Benefits of Flow Game</h1>
+            <ul>
+                    <h1 class="MT-title-answer">Benefits of  puzzle game</h1>
+                    <h1 class="MT-title-answer">Mood Enhancement: Successfully completing puzzles can trigger the release of dopamine, a neurotransmitter associated with pleasure and reward, leading to improved mood and feelings of accomplishment.</h1>
+                    <h1 class="MT-title-answer">Distraction and Relaxation: Puzzle games provide a constructive distraction from everyday stressors, allowing players to relax and unwind while focusing on problem-solving tasks.</h1>
+            </ul> 
+            </div>
+                  <!--BUTTON FOR THE FEATURES-->
+ <section class="card" id="card_element">
+  <div class="card__inner">
+    <div class="card__face card__face--front">
+      <h2>Mood Tracker</h2>
+    </div>
+    <div class="card__face card__face--back">
+      <div class="card__content">
+        <div class="card__header">
+          <img src="\images_for_features\Mood_Tracker.png" alt="" class="flow" />
+          <h2>Mood Tracker</h2>
+        </div>
+        <div class="card__body">
+          <button class="Flow_GameBtn" id="Mood_tracker">Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                </div>
+        </section>
+    </div>
+    <div>
+        <div class="footer_bottom"></div>
+        <section id="footer">
+                <ul class="nav_items">
+                    <li>
+                        <a onclick="openPopupIn()"><i class="fa fa-user"></i></a>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61556285870234&mibextid=JRoKGi"><i class="fab fa-facebook-f icon"></i>    </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/WeCare0411"><i class="fab fa-twitter icon"></i></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/wecaredigitalmindfulness/"><i class="fab fa-instagram icon"></i></a></li>
+                      <li>
+                        <a onclick="openPopupG()"><i class="fa fa-envelope icon"></i></a>
+                        <li class="contactnumber">Contact:09082944158</li>
+                </ul>  
+            </section>
+            </div>
+    </div>
+</div>
+</div>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=USER.js></script>
+</body>
+</html>

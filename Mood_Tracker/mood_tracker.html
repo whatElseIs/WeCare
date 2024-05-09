@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mood Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="mood_tracker.css">
+</head>
+<body>
+  <details>
+    <summary></summary>
+    <nav class="menu">
+      <a href="/Start.html">Home</a>
+      <a href="Diary/Diary.html">Diary</a>
+    </nav>
+  </details>
+<div class="wrapper2">
+  <div class="title">
+    Choose your mood today 
+  </div>
+
+  <div class="container">
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner facebook">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\happy.PNG"></div>
+        <div class="name">Happy</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner twitter">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\awesome.PNG"></div>
+        <div class="name">Awesome</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner instagram">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\confident.PNG"></div>
+        <div class="name">Confident</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner linkedin">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\confused.PNG"></div>
+        <div class="name">Confused</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner whatsapp">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\curious.PNG"></div>
+        <div class="name">Curious</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner google">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\dissapointed.PNG"></div>
+        <div class="name">Dissapointed</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner reddit">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\embarrassed.PNG"></div>
+        <div class="name">Embarrassed</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner quora">
+        <div class="tickmark"></div>
+        <div class="icon"><img src="/Mood_Tracker\emoji\excited.PNG"></div>
+        <div class="name">Excited</div>
+      </div>
+    </label>
+    <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner facebook">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\frustrated.PNG"></div>
+          <div class="name">Frustrated</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner twitter">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\grumpy.PNG"></div>
+          <div class="name">Grumpy</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner instagram">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\hurt.PNG"></div>
+          <div class="name">Hurt</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner linkedin">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\impatient.PNG"></div>
+          <div class="name">Impatient</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner whatsapp">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\jealous.PNG"></div>
+          <div class="name">Jealous</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner google">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\nervous.PNG"></div>
+          <div class="name">Nervous</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner reddit">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\proud.PNG"></div>
+          <div class="name">Proud</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner quora">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\sad.PNG"></div>
+          <div class="name">Sad</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner facebook">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\scared.PNG"></div>
+          <div class="name">Scared</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner twitter">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\shy.PNG"></div>
+          <div class="name">Shy</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner instagram">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\sick.PNG"></div>
+          <div class="name">Sick</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner linkedin">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\silly.PNG"></div>
+          <div class="name">Silly</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner whatsapp">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\sleepy.PNG"></div>
+          <div class="name">Sleepy</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner google">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\suprised.PNG"></div>
+          <div class="name">Suprised</div>
+        </div>
+      </label>
+      <label class="option_item">
+        <input type="checkbox" class="checkbox">
+        <div class="option_inner reddit">
+          <div class="tickmark"></div>
+          <div class="icon"><img src="/Mood_Tracker\emoji\worried.PNG"></div>
+          <div class="name">Worried</div>
+        </div>
+      </label>
+      <button class="btn" id="submit-btn">Submit Emotions</button>
+  </div>
+</div>
+<div class="selected-emotions-container">
+  <h2>Selected Emotions:</h2>
+  <div id="selected-emotions"></div>
+</div>
+<div id="graph-container">
+  <!-- Your existing HTML for the filter dropdown -->
+  <div class="filter-dropdown">
+    <button class="filter-dropdown-btn">Filter by time period ▼</button> <!-- Button to trigger the dropdown -->
+    <ul class="filter-dropdown-menu" aria-labelledby="filter-btn">
+      <li><a class="filter-dropdown-item" href="#" data-filter="all" id="all">All</a></li>
+      <li><a class="filter-dropdown-item" href="#" data-filter="week" id="week">Last Week</a></li>
+      <li><a class="filter-dropdown-item" href="#" data-filter="month" id="month">Last Month</a></li>
+    </ul>
+  </div>
+  <canvas id="mood-chart"></canvas>
+</div>
+	<script src="mood_tracker.js"></script>
+</body>
+</html>
